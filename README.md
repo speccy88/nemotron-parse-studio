@@ -11,7 +11,7 @@ Open `build/Build/Products/Release/Nemotron Parse Studio.app`, or open `Nemotron
 This development build uses its source workspace, Python environment, and model directories. Keep them together. It is locally signed, not a notarized standalone distribution. Moving the workspace requires rebuilding to update the embedded source location.
 
 1. Import with **⌘O** or drag files into the window. Multiple files and multipage documents are supported.
-2. For general documents, select **Local NVIDIA Transformers** in Settings and set the model directory to this workspace's absolute `Models` path. Device `auto` selects MPS on this Mac.
+2. Set the model directory to this workspace's absolute `Models` path in Settings. **Local NVIDIA Transformers** is the default backend and uses **MPS** on Apple silicon. Choose another device in Settings if needed.
 3. Use the Parse menu for a page, document, or batch. **⌘R** parses the selected page. Cancel and Retry Failed are available.
 4. Click a box or select a block. Content and Tables show native editable grids; Raw preserves full model and stage output.
 5. Change Postprocess options and choose **Apply Formatting**. This does not call the model again. Corrections remain separate, with undo/redo and Restore Original.

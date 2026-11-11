@@ -19,7 +19,11 @@ public struct InferenceSettings: Codable, Equatable, Sendable {
     public var revision = pinnedRevision
     public var model_directory = ""
     public var native_model_directory: String?
+    #if arch(arm64)
+    public var device = "mps"
+    #else
     public var device = "auto"
+    #endif
     public var mode = "single"
     public var max_new_tokens = 8744
     public var temperature = 0.2

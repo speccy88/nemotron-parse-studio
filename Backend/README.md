@@ -28,10 +28,11 @@ not download weights. Select the absolute `Models` directory in Studio settings.
 The tested workspace also has `.venv-model`; `run.sh` prefers that environment
 when present. `NEMOTRON_PYTHON=/absolute/python Backend/run.sh` overrides selection.
 
-CPU, Apple MPS, and NVIDIA CUDA execution are supported by the loader. The default
-`auto` selects CUDA, then MPS, then CPU. CUDA uses BF16; CPU/MPS use float32. These
-are PyTorch/Transformers backends, **not Core AI**. The same pinned model runs on
-each; model outputs may differ with arithmetic and sampling.
+The loader supports CPU, Apple MPS, and NVIDIA CUDA. Studio defaults to MPS on
+Apple silicon and to `auto` on Intel Macs. The worker uses `auto` when the request
+omits a device, selecting CUDA first, then MPS, then CPU. CUDA uses BF16, and CPU
+and MPS use float32. Each device runs the same pinned model through Transformers.
+Arithmetic and sampling can affect model output.
 
 The connection test checks local dependencies and the model file. Actual model
 initialization happens at first Parse and errors are returned explicitly. Before
