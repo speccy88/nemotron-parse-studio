@@ -1,0 +1,6 @@
+# NVIDIA pinned helper dependency versions from POSTPROCESSING.md.
+beautifulsoup4==4.13.3
+Pillow==12.2.0
+numpy==2.2.6
+httpx==0.28.1
+pytest>=8,<10

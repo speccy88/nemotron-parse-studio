@@ -1,0 +1,41 @@
+// !$*UTF8*$!
+{ archiveVersion = 1; classes = {}; objectVersion = 56; objects = {
+4A12184A66BF356187AFCB94 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/ParseCore/BackendClient.swift"; sourceTree = SOURCE_ROOT; };
+E53A8AE9594307B0AAB198EA = { isa = PBXBuildFile; fileRef = 4A12184A66BF356187AFCB94; };
+92A5D207419F87361CDC7D60 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/ParseCore/DocumentIO.swift"; sourceTree = SOURCE_ROOT; };
+D02F458A7E24E28264A15441 = { isa = PBXBuildFile; fileRef = 92A5D207419F87361CDC7D60; };
+497A7C35190F335507F8F04A = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/ParseCore/Exporter.swift"; sourceTree = SOURCE_ROOT; };
+BA729A9565FD6FB3A551A2D6 = { isa = PBXBuildFile; fileRef = 497A7C35190F335507F8F04A; };
+0AAE5070F1184700C1E7A052 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/ParseCore/Models.swift"; sourceTree = SOURCE_ROOT; };
+23E180AEB5CF606A64FF62AA = { isa = PBXBuildFile; fileRef = 0AAE5070F1184700C1E7A052; };
+8655CF21FE696BA90282F631 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/ParseCore/NativeCoreAI.swift"; sourceTree = SOURCE_ROOT; };
+DCEF2608239A38860CD5B18D = { isa = PBXBuildFile; fileRef = 8655CF21FE696BA90282F631; };
+9A819C7BD67DB9D92BE1E2BB = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/ParseCore/PythonWorker.swift"; sourceTree = SOURCE_ROOT; };
+42E68A9A925183EE5D25C01A = { isa = PBXBuildFile; fileRef = 9A819C7BD67DB9D92BE1E2BB; };
+161C3FA63FF761445EC49613 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/ParseStudio/ExportView.swift"; sourceTree = SOURCE_ROOT; };
+FA74131A6CAB8D6101DFAA6E = { isa = PBXBuildFile; fileRef = 161C3FA63FF761445EC49613; };
+0CAF8EC6AFF9CEF79E37A386 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/ParseStudio/InspectorView.swift"; sourceTree = SOURCE_ROOT; };
+07AE81999B35CF9CA9B0773B = { isa = PBXBuildFile; fileRef = 0CAF8EC6AFF9CEF79E37A386; };
+026F97AF44C61C3279456EE5 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/ParseStudio/ParseStudioApp.swift"; sourceTree = SOURCE_ROOT; };
+2FF847EC0B058FFD24A88CBE = { isa = PBXBuildFile; fileRef = 026F97AF44C61C3279456EE5; };
+8C6164C1E2E97533B531DA55 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/ParseStudio/SettingsView.swift"; sourceTree = SOURCE_ROOT; };
+0DBF3710FC8443A086376A3E = { isa = PBXBuildFile; fileRef = 8C6164C1E2E97533B531DA55; };
+2059EEB4BB186353E8FDDA70 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/ParseStudio/StudioModel.swift"; sourceTree = SOURCE_ROOT; };
+72E6FCD530A9F982F5E65FD0 = { isa = PBXBuildFile; fileRef = 2059EEB4BB186353E8FDDA70; };
+8FFACD3602FB8B89817AB67E = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/ParseStudio/WorkspaceView.swift"; sourceTree = SOURCE_ROOT; };
+9DB50F84B360E31336850D87 = { isa = PBXBuildFile; fileRef = 8FFACD3602FB8B89817AB67E; };
+38A007151ABE87CC01A5B6E9 = { isa = PBXFileReference; explicitFileType = wrapper.application; path = "Nemotron Parse Studio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+FBDC4F23F93125BBEEAE800C = { isa = PBXGroup; children = (38A007151ABE87CC01A5B6E9,); name = Products; sourceTree = "<group>"; };
+64292B1C2B2E13EAD8788FC8 = { isa = PBXGroup; children = (4A12184A66BF356187AFCB94,92A5D207419F87361CDC7D60,497A7C35190F335507F8F04A,0AAE5070F1184700C1E7A052,8655CF21FE696BA90282F631,9A819C7BD67DB9D92BE1E2BB,161C3FA63FF761445EC49613,0CAF8EC6AFF9CEF79E37A386,026F97AF44C61C3279456EE5,8C6164C1E2E97533B531DA55,2059EEB4BB186353E8FDDA70,8FFACD3602FB8B89817AB67E,FBDC4F23F93125BBEEAE800C,); sourceTree = "<group>"; };
+BCE16DD0260827ECF338C787 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (E53A8AE9594307B0AAB198EA,D02F458A7E24E28264A15441,BA729A9565FD6FB3A551A2D6,23E180AEB5CF606A64FF62AA,DCEF2608239A38860CD5B18D,42E68A9A925183EE5D25C01A,FA74131A6CAB8D6101DFAA6E,07AE81999B35CF9CA9B0773B,2FF847EC0B058FFD24A88CBE,0DBF3710FC8443A086376A3E,72E6FCD530A9F982F5E65FD0,9DB50F84B360E31336850D87,); runOnlyForDeploymentPostprocessing = 0; };
+7561BFB015D8F536760CB671 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+0189424A5A60FED329FA868E = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+89E1FD6268CC0F221A2BE178 = { isa = XCBuildConfiguration; name = Debug; buildSettings = { SDKROOT = macosx; MACOSX_DEPLOYMENT_TARGET = 14.0; SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; }; };
+7082CC0B6FC1282FCEABD07A = { isa = XCBuildConfiguration; name = Debug; buildSettings = { PRODUCT_NAME = "Nemotron Parse Studio"; PRODUCT_BUNDLE_IDENTIFIER = com.local.NemotronParseStudio; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Resources/Info.plist; CODE_SIGN_STYLE = Automatic; CODE_SIGN_IDENTITY = "-"; ENABLE_APP_SANDBOX = NO; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; COMBINE_HIDPI_IMAGES = YES; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; }; };
+E6DE6C99132752C914FEF632 = { isa = XCBuildConfiguration; name = Release; buildSettings = { SDKROOT = macosx; MACOSX_DEPLOYMENT_TARGET = 14.0; SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; }; };
+639A7CA24D39909E713B47F7 = { isa = XCBuildConfiguration; name = Release; buildSettings = { PRODUCT_NAME = "Nemotron Parse Studio"; PRODUCT_BUNDLE_IDENTIFIER = com.local.NemotronParseStudio; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Resources/Info.plist; CODE_SIGN_STYLE = Automatic; CODE_SIGN_IDENTITY = "-"; ENABLE_APP_SANDBOX = NO; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_OPTIMIZATION_LEVEL = "-O"; COMBINE_HIDPI_IMAGES = YES; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; }; };
+862894B703A6DEDF96A9DD6C = { isa = XCConfigurationList; buildConfigurations = (89E1FD6268CC0F221A2BE178,E6DE6C99132752C914FEF632,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+C57128001CE614BF8549D6BB = { isa = XCConfigurationList; buildConfigurations = (7082CC0B6FC1282FCEABD07A,639A7CA24D39909E713B47F7,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+0E8A3AD980EC179856012B7E = { isa = PBXNativeTarget; buildConfigurationList = C57128001CE614BF8549D6BB; buildPhases = (BCE16DD0260827ECF338C787,7561BFB015D8F536760CB671,0189424A5A60FED329FA868E,); buildRules = (); dependencies = (); name = NemotronParseStudio; productName = NemotronParseStudio; productReference = 38A007151ABE87CC01A5B6E9; productType = "com.apple.product-type.application"; };
+98F54143AB4E86B28C3AFEE0 = { isa = PBXProject; attributes = { BuildIndependentTargetsInParallel = YES; LastSwiftUpdateCheck = 2700; LastUpgradeCheck = 2700; }; buildConfigurationList = 862894B703A6DEDF96A9DD6C; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; knownRegions = (en,Base,); mainGroup = 64292B1C2B2E13EAD8788FC8; productRefGroup = FBDC4F23F93125BBEEAE800C; projectDirPath = ""; projectRoot = ""; targets = (0E8A3AD980EC179856012B7E,); };
+}; rootObject = 98F54143AB4E86B28C3AFEE0; }

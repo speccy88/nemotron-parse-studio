@@ -1,0 +1,10 @@
+{
+  "multilingual": "<x_0.1><y_0.1>Bonjour · café · 日本語 · العربية · Ω<x_0.9><y_0.9><class_Text>",
+  "math_code": "<x_0.1><y_0.1>```python\\nprint(\"a\")\\n```<x_0.9><y_0.9><class_Code><x_0.1><y_0.1>$E=mc^2$<x_0.9><y_0.9><class_Formula>",
+  "merged_table": "<x_0.1><y_0.1>\\begin{tabular}{ccc}\\multicolumn{2}{c}{\\thead{Group}} & \\thead{Total} \\\\ A & B & 0032 \\\\ \\end{tabular}<x_0.9><y_0.9><class_Table>",
+  "empty_cell": "<x_0.1><y_0.1>\\begin{tabular}{cc}\\thead{Item} & \\thead{Note} \\\\ A & first\\newline second \\\\ B & \\\\ \\end{tabular}<x_0.9><y_0.9><class_Table>",
+  "chart": "<x_0.1><y_0.1><chart><title>Sales</title><table><tr><td>A</td><td>32 (16.6%)</td></tr><tr><td>B</td><td>64 (33.2%)</td></tr></table></chart><x_0.9><y_0.9><class_Chart>",
+  "unknown_class": "<x_0.1><y_0.1>Preserved unknown role<x_0.9><y_0.9><class_CustomRole>",
+  "malformed_table": "<x_0.1><y_0.1>\\begin{tabular}{cc} incomplete &<x_0.9><y_0.9><class_Table>",
+  "empty_page": ""
+}

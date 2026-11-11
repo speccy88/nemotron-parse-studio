@@ -1,0 +1,23 @@
+.venv-conversion/
+__pycache__/
+*.aimodel
+*.pt2
+
+# Retain the synthetic inputs and selected validation reports.
+evidence/*
+!evidence/APPLE_LICENSE
+!evidence/apple_edsr_export.py
+!evidence/native-validation.json
+!evidence/reference-requirements-lock.txt
+!evidence/conversion-requirements-lock.txt
+!evidence/pages/
+evidence/pages/*
+!evidence/pages/simple.png
+!evidence/pages/mixed.png
+!evidence/pages/empty.png
+!evidence/stdio/
+evidence/stdio/*
+!evidence/stdio/all-report.json
+!evidence/vision-fixed-simple/
+evidence/vision-fixed-simple/*
+!evidence/vision-fixed-simple/report.json

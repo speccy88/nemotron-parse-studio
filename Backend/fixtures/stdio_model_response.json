@@ -1,0 +1,394 @@
+{
+  "raw": "</s><s><predict_bbox><predict_classes><output_markdown><predict_text_in_pic><x_0.0547><y_0.0461>## Parse Studio validation<x_0.5459><y_0.0844><class_Section-header>\n\n<x_0.0537><y_0.1187>A local document with text and a table.<x_0.6367><y_0.1477><class_Text>\n\n<x_0.0547><y_0.1703>Bonjour le monde. 2 + 2 = 4.<x_0.4932><y_0.2><class_Text>\n\n<x_0.0596><y_0.2609>\\begin{tabular}{ccc}\n\\thead{Item} & \\thead{Count} & \\thead{Price}\\\\\nApples & 3 & 1.50\\\\\nPears & 5 & 2.25\\\\\n\\end{tabular}<x_0.9395><y_0.4328><class_Table>\n\n<x_0.0576><y_0.5016><chart type=\"bar\">\ntitle: Quarterly share\nbind: Value ;  ; y\n\n| Category | Value |\n| --- | --- |\n| A | 60% |\n| B | 40% |\n</chart><x_0.709><y_0.8594><class_Chart>\n\n<x_0.0586><y_0.907>Figure 1. Example values, 60% and 40%.<x_0.6377><y_0.9375><class_Caption></s>",
+  "mergedRaw": "</s><s><predict_bbox><predict_classes><output_markdown><predict_text_in_pic><x_0.0547><y_0.0461>## Parse Studio validation<x_0.5459><y_0.0844><class_Section-header>\n\n<x_0.0537><y_0.1187>A local document with text and a table.<x_0.6367><y_0.1477><class_Text>\n\n<x_0.0547><y_0.1703>Bonjour le monde. 2 + 2 = 4.<x_0.4932><y_0.2><class_Text>\n\n<x_0.0596><y_0.2609>\\begin{tabular}{ccc}\n\\thead{Item} & \\thead{Count} & \\thead{Price}\\\\\nApples & 3 & 1.50\\\\\nPears & 5 & 2.25\\\\\n\\end{tabular}<x_0.9395><y_0.4328><class_Table>\n\n<x_0.0576><y_0.5016><chart type=\"bar\">\ntitle: Quarterly share\nbind: Value ;  ; y\n\n| Category | Value |\n| --- | --- |\n| A | 60% |\n| B | 40% |\n</chart><x_0.709><y_0.8594><class_Chart>\n\n<x_0.0586><y_0.907>Figure 1. Example values, 60% and 40%.<x_0.6377><y_0.9375><class_Caption></s>",
+  "markdown": "## Parse Studio validation\n\nA local document with text and a table.\n\nBonjour le monde. 2 + 2 = 4.\n\n<table><tr><th colspan=\"1\" rowspan=\"1\">Item</th><th colspan=\"1\" rowspan=\"1\">Count</th><th colspan=\"1\" rowspan=\"1\">Price</th></tr><tr><td colspan=\"1\" rowspan=\"1\">Apples</td><td colspan=\"1\" rowspan=\"1\">3</td><td colspan=\"1\" rowspan=\"1\">1.50</td></tr><tr><td colspan=\"1\" rowspan=\"1\">Pears</td><td colspan=\"1\" rowspan=\"1\">5</td><td colspan=\"1\" rowspan=\"1\">2.25</td></tr></table>\n\n<chart type=\"bar\">\nbind: Value ;  ; y\n\n<table><caption>Quarterly share</caption><thead><tr><th scope=\"col\">Category</th><th scope=\"col\">Value</th></tr></thead><tbody><tr><td>A</td><td>60%</td></tr><tr><td>B</td><td>40%</td></tr></tbody></table>\n</chart>\n\nFigure 1. Example values, 60% and 40%.",
+  "blocks": [
+    {
+      "id": "69d3effe3d580a7144937d30-0",
+      "rawText": "## Parse Studio validation",
+      "text": "## Parse Studio validation",
+      "semanticClass": "Section-header",
+      "bbox": [
+        0.0547,
+        0.0461,
+        0.5459,
+        0.0844
+      ],
+      "bboxPixels": [
+        35.007999999999996,
+        36.88,
+        349.37600000000003,
+        67.52
+      ],
+      "readingOrder": 0,
+      "provenance": "fullpage",
+      "warnings": []
+    },
+    {
+      "id": "bcad1ecd62198df94e8445c7-0",
+      "rawText": "A local document with text and a table.",
+      "text": "A local document with text and a table.",
+      "semanticClass": "Text",
+      "bbox": [
+        0.0537,
+        0.1187,
+        0.6367,
+        0.1477
+      ],
+      "bboxPixels": [
+        34.367999999999995,
+        94.96,
+        407.48800000000006,
+        118.16
+      ],
+      "readingOrder": 1,
+      "provenance": "fullpage",
+      "warnings": []
+    },
+    {
+      "id": "2944a8e9d2a683e6e1fc254d-0",
+      "rawText": "Bonjour le monde. 2 + 2 = 4.",
+      "text": "Bonjour le monde. 2 + 2 = 4.",
+      "semanticClass": "Text",
+      "bbox": [
+        0.0547,
+        0.1703,
+        0.4932,
+        0.2
+      ],
+      "bboxPixels": [
+        35.007999999999996,
+        136.24,
+        315.648,
+        160.0
+      ],
+      "readingOrder": 2,
+      "provenance": "fullpage",
+      "warnings": []
+    },
+    {
+      "id": "4fb302537d1cd67ca8316c5f-0",
+      "rawText": "\\begin{tabular}{ccc}\n\\thead{Item} & \\thead{Count} & \\thead{Price}\\\\\nApples & 3 & 1.50\\\\\nPears & 5 & 2.25\\\\\n\\end{tabular}",
+      "text": "<table><tr><th colspan=\"1\" rowspan=\"1\">Item</th><th colspan=\"1\" rowspan=\"1\">Count</th><th colspan=\"1\" rowspan=\"1\">Price</th></tr><tr><td colspan=\"1\" rowspan=\"1\">Apples</td><td colspan=\"1\" rowspan=\"1\">3</td><td colspan=\"1\" rowspan=\"1\">1.50</td></tr><tr><td colspan=\"1\" rowspan=\"1\">Pears</td><td colspan=\"1\" rowspan=\"1\">5</td><td colspan=\"1\" rowspan=\"1\">2.25</td></tr></table>",
+      "semanticClass": "Table",
+      "bbox": [
+        0.0596,
+        0.2609,
+        0.9395,
+        0.4328
+      ],
+      "bboxPixels": [
+        38.144,
+        208.72000000000003,
+        601.28,
+        346.24
+      ],
+      "readingOrder": 3,
+      "provenance": "fullpage",
+      "warnings": [],
+      "table": {
+        "cells": [
+          {
+            "row": 0,
+            "column": 0,
+            "rowSpan": 1,
+            "columnSpan": 1,
+            "text": "Item",
+            "isHeader": true,
+            "html": "Item"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "rowSpan": 1,
+            "columnSpan": 1,
+            "text": "Count",
+            "isHeader": true,
+            "html": "Count"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "rowSpan": 1,
+            "columnSpan": 1,
+            "text": "Price",
+            "isHeader": true,
+            "html": "Price"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "rowSpan": 1,
+            "columnSpan": 1,
+            "text": "Apples",
+            "isHeader": false,
+            "html": "Apples"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "rowSpan": 1,
+            "columnSpan": 1,
+            "text": "3",
+            "isHeader": false,
+            "html": "3"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "rowSpan": 1,
+            "columnSpan": 1,
+            "text": "1.50",
+            "isHeader": false,
+            "html": "1.50"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "rowSpan": 1,
+            "columnSpan": 1,
+            "text": "Pears",
+            "isHeader": false,
+            "html": "Pears"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "rowSpan": 1,
+            "columnSpan": 1,
+            "text": "5",
+            "isHeader": false,
+            "html": "5"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "rowSpan": 1,
+            "columnSpan": 1,
+            "text": "2.25",
+            "isHeader": false,
+            "html": "2.25"
+          }
+        ],
+        "rowCount": 3,
+        "columnCount": 3,
+        "html": "<table><tr><th colspan=\"1\" rowspan=\"1\">Item</th><th colspan=\"1\" rowspan=\"1\">Count</th><th colspan=\"1\" rowspan=\"1\">Price</th></tr><tr><td colspan=\"1\" rowspan=\"1\">Apples</td><td colspan=\"1\" rowspan=\"1\">3</td><td colspan=\"1\" rowspan=\"1\">1.50</td></tr><tr><td colspan=\"1\" rowspan=\"1\">Pears</td><td colspan=\"1\" rowspan=\"1\">5</td><td colspan=\"1\" rowspan=\"1\">2.25</td></tr></table>",
+        "markdown": "\n| Item | Count | Price |\n| --- | --- | --- |\n| Apples | 3 | 1.50 |\n| Pears | 5 | 2.25 |\n",
+        "latex": "\\begin{tabular}{ccc}\n\\thead{Item} & \\thead{Count} & \\thead{Price}\\\\\nApples & 3 & 1.50\\\\\nPears & 5 & 2.25\\\\\n\\end{tabular}",
+        "csv": "Item,Count,Price\r\nApples,3,1.50\r\nPears,5,2.25",
+        "recordsJSON": "[\n  {\n    \"Item\": \"Apples\",\n    \"Count\": \"3\",\n    \"Price\": \"1.50\"\n  },\n  {\n    \"Item\": \"Pears\",\n    \"Count\": \"5\",\n    \"Price\": \"2.25\"\n  }\n]",
+        "hierarchicalJSON": "{\n  \"header_rows\": 1,\n  \"columns\": [\n    \"Item\",\n    \"Count\",\n    \"Price\"\n  ],\n  \"headers\": [\n    [\n      \"Item\",\n      \"Count\",\n      \"Price\"\n    ]\n  ],\n  \"data\": [\n    [\n      \"Apples\",\n      \"3\",\n      \"1.50\"\n    ],\n    [\n      \"Pears\",\n      \"5\",\n      \"2.25\"\n    ]\n  ],\n  \"body_cells\": [\n    [\n      {\n        \"text\": \"Apples\"\n      },\n      {\n        \"text\": \"3\"\n      },\n      {\n        \"text\": \"1.50\"\n      }\n    ],\n    [\n      {\n        \"text\": \"Pears\"\n      },\n      {\n        \"text\": \"5\"\n      },\n      {\n        \"text\": \"2.25\"\n      }\n    ]\n  ]\n}",
+        "caption": "",
+        "contextText": ""
+      }
+    },
+    {
+      "id": "310e8250582788f8524ef507-0",
+      "rawText": "<chart type=\"bar\">\ntitle: Quarterly share\nbind: Value ;  ; y\n\n| Category | Value |\n| --- | --- |\n| A | 60% |\n| B | 40% |\n</chart>",
+      "text": "<chart type=\"bar\">\nbind: Value ;  ; y\n\n<table><caption>Quarterly share</caption><thead><tr><th scope=\"col\">Category</th><th scope=\"col\">Value</th></tr></thead><tbody><tr><td>A</td><td>60%</td></tr><tr><td>B</td><td>40%</td></tr></tbody></table>\n</chart>",
+      "semanticClass": "Chart",
+      "bbox": [
+        0.0576,
+        0.5016,
+        0.709,
+        0.8594
+      ],
+      "bboxPixels": [
+        36.864,
+        401.28000000000003,
+        453.76,
+        687.5200000000001
+      ],
+      "readingOrder": 4,
+      "provenance": "fullpage",
+      "warnings": [],
+      "table": {
+        "cells": [
+          {
+            "row": 0,
+            "column": 0,
+            "rowSpan": 1,
+            "columnSpan": 1,
+            "text": "Category",
+            "isHeader": true,
+            "html": "Category"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "rowSpan": 1,
+            "columnSpan": 1,
+            "text": "Value",
+            "isHeader": true,
+            "html": "Value"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "rowSpan": 1,
+            "columnSpan": 1,
+            "text": "A",
+            "isHeader": false,
+            "html": "A"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "rowSpan": 1,
+            "columnSpan": 1,
+            "text": "60%",
+            "isHeader": false,
+            "html": "60%"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "rowSpan": 1,
+            "columnSpan": 1,
+            "text": "B",
+            "isHeader": false,
+            "html": "B"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "rowSpan": 1,
+            "columnSpan": 1,
+            "text": "40%",
+            "isHeader": false,
+            "html": "40%"
+          }
+        ],
+        "rowCount": 3,
+        "columnCount": 2,
+        "html": "<chart type=\"bar\">\nbind: Value ;  ; y\n\n<table><caption>Quarterly share</caption><thead><tr><th scope=\"col\">Category</th><th scope=\"col\">Value</th></tr></thead><tbody><tr><td>A</td><td>60%</td></tr><tr><td>B</td><td>40%</td></tr></tbody></table>\n</chart>",
+        "markdown": "<chart type=\"bar\">\nbind: Value ;  ; y\n\n\n| Category | Value |\n| --- | --- |\n| A | 60% |\n| B | 40% |\n\n</chart>",
+        "latex": "<chart type=\"bar\">\ntitle: Quarterly share\nbind: Value ;  ; y\n\n| Category | Value |\n| --- | --- |\n| A | 60% |\n| B | 40% |\n</chart>",
+        "csv": "Category,Value\r\nA,60%\r\nB,40%",
+        "recordsJSON": "[\n  {\n    \"Category\": \"A\",\n    \"Value\": \"60%\"\n  },\n  {\n    \"Category\": \"B\",\n    \"Value\": \"40%\"\n  }\n]",
+        "hierarchicalJSON": "{\n  \"header_rows\": 1,\n  \"columns\": [\n    \"Category\",\n    \"Value\"\n  ],\n  \"headers\": [\n    [\n      \"Category\",\n      \"Value\"\n    ]\n  ],\n  \"data\": [\n    [\n      \"A\",\n      \"60%\"\n    ],\n    [\n      \"B\",\n      \"40%\"\n    ]\n  ],\n  \"body_cells\": [\n    [\n      {\n        \"text\": \"A\"\n      },\n      {\n        \"text\": \"60%\"\n      }\n    ],\n    [\n      {\n        \"text\": \"B\"\n      },\n      {\n        \"text\": \"40%\"\n      }\n    ]\n  ]\n}",
+        "caption": "Quarterly share",
+        "contextText": ""
+      }
+    },
+    {
+      "id": "10cb5783bd25a34d93765dfd-0",
+      "rawText": "Figure 1. Example values, 60% and 40%.",
+      "text": "Figure 1. Example values, 60% and 40%.",
+      "semanticClass": "Caption",
+      "bbox": [
+        0.0586,
+        0.907,
+        0.6377,
+        0.9375
+      ],
+      "bboxPixels": [
+        37.504,
+        725.6,
+        408.12800000000004,
+        750.0
+      ],
+      "readingOrder": 5,
+      "provenance": "fullpage",
+      "warnings": []
+    }
+  ],
+  "warnings": [],
+  "stages": [
+    {
+      "name": "fullpage",
+      "raw": "</s><s><predict_bbox><predict_classes><output_markdown><predict_text_in_pic><x_0.0547><y_0.0461>## Parse Studio validation<x_0.5459><y_0.0844><class_Section-header>\n\n<x_0.0537><y_0.1187>A local document with text and a table.<x_0.6367><y_0.1477><class_Text>\n\n<x_0.0547><y_0.1703>Bonjour le monde. 2 + 2 = 4.<x_0.4932><y_0.2><class_Text>\n\n<x_0.0596><y_0.2609>\\begin{tabular}{ccc}\n\\thead{Item} & \\thead{Count} & \\thead{Price}\\\\\nApples & 3 & 1.50\\\\\nPears & 5 & 2.25\\\\\n\\end{tabular}<x_0.9395><y_0.4328><class_Table>\n\n<x_0.0576><y_0.5016><chart type=\"bar\">\ntitle: Quarterly share\nbind: Value ;  ; y\n\n| Category | Value |\n| --- | --- |\n| A | 60% |\n| B | 40% |\n</chart><x_0.709><y_0.8594><class_Chart>\n\n<x_0.0586><y_0.907>Figure 1. Example values, 60% and 40%.<x_0.6377><y_0.9375><class_Caption></s>",
+      "finishReason": "stop",
+      "usage": {
+        "completion_tokens": 184
+      },
+      "seconds": 15.775754042000017
+    }
+  ],
+  "metrics": {
+    "model_load_seconds": 5.002932791000148,
+    "inference_seconds": 15.775754042000017,
+    "postprocess_seconds": 0.0017847080000592541,
+    "total_seconds": 20.79461308299983,
+    "request_count": 1,
+    "pages_per_second": 0.04808937757142149,
+    "peak_memory_bytes": 1663467520
+  },
+  "backend": "transformers",
+  "revision": "a9a1febb1b9bf497fc67bd1d23fa33e170b249db",
+  "settings": {
+    "backend": "transformers",
+    "model_directory": "Models",
+    "revision": "a9a1febb1b9bf497fc67bd1d23fa33e170b249db",
+    "device": "mps",
+    "temperature": 0,
+    "max_new_tokens": 2048,
+    "max_crops": 8,
+    "mode": "single"
+  },
+  "options": {
+    "infer_headers": true,
+    "render_charts": true,
+    "split_chart_value_percent": false,
+    "relocate_chart_captions": false,
+    "normalize_text": true,
+    "deduplicate": true
+  },
+  "imageSize": [
+    640,
+    800
+  ],
+  "coordinateFrame": "content_normalized",
+  "inference": {
+    "model": "nvidia/Nemotron-3.5-Parse",
+    "backend": "transformers",
+    "base_url": null,
+    "mode": "single",
+    "triple_regions": null,
+    "image_size": [
+      640,
+      800
+    ],
+    "regions": [],
+    "requests": 1,
+    "sampling": {
+      "fullpage": {
+        "temperature": 0.0,
+        "repetition_penalty": 1.05,
+        "max_tokens": 2048,
+        "top_k": 50,
+        "top_p": 1.0,
+        "seed": 0
+      },
+      "detection": {
+        "temperature": 0.0,
+        "repetition_penalty": 1.05,
+        "max_tokens": 4096,
+        "top_k": 50,
+        "top_p": 1.0,
+        "seed": 0
+      },
+      "crop": {
+        "temperature": 0.1,
+        "repetition_penalty": 1.0,
+        "max_tokens": 2048,
+        "top_k": 50,
+        "top_p": 1.0,
+        "seed": 0
+      }
+    },
+    "postprocessing": {
+      "infer_headers": true,
+      "render_charts": true,
+      "split_chart_value_percent": false,
+      "relocate_chart_captions": false,
+      "normalize_text": true,
+      "deduplicate": true
+    },
+    "max_regions": 8,
+    "crop_margin_ratio": 0.04,
+    "crop_margin_px": 12,
+    "crop_jpeg_quality": 95,
+    "predict_text_in_pic": true
+  }
+}

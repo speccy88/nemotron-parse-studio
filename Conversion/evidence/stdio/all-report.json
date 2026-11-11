@@ -1,0 +1,56 @@
+[
+  {
+    "mode": "single",
+    "passed": true,
+    "metrics": {
+      "model_load_seconds": 5.002932791000148,
+      "inference_seconds": 15.775754042000017,
+      "postprocess_seconds": 0.0017847080000592541,
+      "total_seconds": 20.79461308299983,
+      "request_count": 1,
+      "pages_per_second": 0.04808937757142149,
+      "peak_memory_bytes": 1663467520
+    },
+    "raw_unchanged_after_formatting": true
+  },
+  {
+    "mode": "double",
+    "passed": true,
+    "metrics": {
+      "model_load_seconds": 0.0,
+      "inference_seconds": 16.636503374999847,
+      "postprocess_seconds": 0.0017732080000314454,
+      "total_seconds": 16.645954749999873,
+      "request_count": 3,
+      "pages_per_second": 0.06007465567572852,
+      "peak_memory_bytes": 2018099200
+    },
+    "raw_unchanged_after_formatting": true
+  },
+  {
+    "mode": "triple",
+    "passed": true,
+    "metrics": {
+      "model_load_seconds": 0.0,
+      "inference_seconds": 14.439575416000025,
+      "postprocess_seconds": 0.0024787090001154866,
+      "total_seconds": 14.449734041000056,
+      "request_count": 4,
+      "pages_per_second": 0.06920542600732814,
+      "peak_memory_bytes": 2018099200
+    },
+    "raw_unchanged_after_formatting": true
+  },
+  {
+    "token_limit_retains_partial_output": true
+  },
+  {
+    "cancelled_then_retry_passed": true,
+    "cancellation_seconds": 2.4270110420000037
+  },
+  {
+    "persistent_pid": 3758,
+    "worker_socket_count": 0,
+    "transport": "private stdin/stdout pipes"
+  }
+]

@@ -1,0 +1,23 @@
+</s><s><predict_bbox><predict_classes><output_markdown><predict_text_in_pic><x_0.0547><y_0.0461>## Parse Studio validation<x_0.5459><y_0.0844><class_Section-header>
+
+<x_0.0537><y_0.1187>A local document with text and a table.<x_0.6367><y_0.1477><class_Text>
+
+<x_0.0547><y_0.1703>Bonjour le monde. 2 + 2 = 4.<x_0.4932><y_0.2><class_Text>
+
+<x_0.0596><y_0.2609>\begin{tabular}{ccc}
+\thead{Item} & \thead{Count} & \thead{Price}\\
+Apples & 3 & 1.50\\
+Pears & 5 & 2.25\\
+\end{tabular}<x_0.9395><y_0.4328><class_Table>
+
+<x_0.0576><y_0.5016><chart type="bar">
+title: Quarterly share
+bind: Value ;  ; y
+
+| Category | Value |
+| --- | --- |
+| A | 60% |
+| B | 40% |
+</chart><x_0.709><y_0.8594><class_Chart>
+
+<x_0.0586><y_0.907>Figure 1. Example values, 60% and 40%.<x_0.6377><y_0.9375><class_Caption></s>

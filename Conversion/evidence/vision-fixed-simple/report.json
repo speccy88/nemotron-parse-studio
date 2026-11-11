@@ -1,0 +1,139 @@
+{
+  "revision": "a9a1febb1b9bf497fc67bd1d23fa33e170b249db",
+  "macos": "27.2.1",
+  "core_ai_end_to_end_validated": false,
+  "stages": {
+    "specialized_vision_parity": {
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "finite": true,
+      "shape": [
+        1,
+        522,
+        1152
+      ]
+    },
+    "vision_adapter_parity": {
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "finite": true,
+      "shape": [
+        1,
+        129,
+        1024
+      ]
+    },
+    "decoder_prefill_parity": {
+      "max_absolute_error": 4.1961669921875e-05,
+      "mean_absolute_error": 2.0902909909636946e-06,
+      "finite": true,
+      "shape": [
+        1,
+        1,
+        72512
+      ]
+    },
+    "prefill_keys_parity": {
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "finite": true,
+      "shape": [
+        10,
+        1,
+        8,
+        135,
+        64
+      ]
+    },
+    "prefill_values_parity": {
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "finite": true,
+      "shape": [
+        10,
+        1,
+        8,
+        135,
+        64
+      ]
+    },
+    "decoder_cache_step_parity": {
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "finite": true,
+      "shape": [
+        1,
+        1,
+        72512
+      ]
+    },
+    "step_keys_parity": {
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "finite": true,
+      "shape": [
+        10,
+        1,
+        8,
+        136,
+        64
+      ]
+    },
+    "step_values_parity": {
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "finite": true,
+      "shape": [
+        10,
+        1,
+        8,
+        136,
+        64
+      ]
+    },
+    "unsupported_vision_ops_remaining": [],
+    "vision_torch_export": {
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "finite": true,
+      "shape": [
+        1,
+        522,
+        1152
+      ]
+    },
+    "vision_core_ai": "Exported and executed through macOS Core AI; see measured errors",
+    "vision_native_runtime": {
+      "output": {
+        "max_absolute_error": 0.06371307373046875,
+        "mean_absolute_error": 5.137357220519334e-05,
+        "finite": true,
+        "shape": [
+          1,
+          522,
+          1152
+        ]
+      },
+      "runtime_seconds": 3.3179233329999533,
+      "runtime": "macOS Core AI CPU, USE_OS_COREAI=1"
+    }
+  },
+  "limitations": [
+    "Fixed single-page geometry",
+    "Explicit functional cache, not Core AI mutable cache",
+    "No full Swift tokenizer/generation integration"
+  ],
+  "geometry": {
+    "image_size_hw": [
+      256,
+      512
+    ],
+    "content_size_hw": [
+      256,
+      512
+    ],
+    "patch_count": 512,
+    "source_image_sha256": "148bb450ebc8ec60c39d91ae7b359e91441bb11745a8c66359b721f59cdadf56"
+  },
+  "pytorch_partition_parity_passed": true
+}

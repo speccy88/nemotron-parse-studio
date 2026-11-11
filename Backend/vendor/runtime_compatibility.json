@@ -1,0 +1,45 @@
+{
+  "model_name": "Nemotron 3.5 Parse",
+  "repository": "nvidia/Nemotron-3.5-Parse",
+  "release_date": "2026-10-14",
+  "license": "OpenMDW-1.1",
+  "model_release": "3.5.0",
+  "plugin_release": "3.5.0.post2",
+  "unique_parameters": 630800496,
+  "mtp_parameters": 2099200,
+  "model_safetensors_sha256": "81dd7609c589f3694ce75520c25af5010953231358de6aec4d03e8c6aac787e9",
+  "wheel_sha256": "63d6fe932dfc3cab5d029086f3c7c0ac7f75fad6f6f8c08799a60c54bfa12bdb",
+  "runtime_defaults": {
+    "one_token_mtp": true,
+    "fa3_aot_scheduler": false,
+    "model_scoped": true,
+    "explicit_speculative_options_respected": true
+  },
+  "attention_backend_source_pin": {
+    "backend": "FlashAttention FA3",
+    "provided_by": "vllm==0.26.0",
+    "standalone_flash_attn_distribution": false,
+    "flash_attention_source_version": "2.8.4",
+    "repository": "https://github.com/vllm-project/flash-attention",
+    "revision": "caaa4eb59845388a20b1f435ecaafb4bd9517ad8",
+    "pin_evidence": "https://github.com/vllm-project/vllm/blob/v0.26.0/cmake/external_projects/vllm_flash_attn.cmake",
+    "scope": "Upstream default source pin for vLLM 0.26.0; not a new runtime measurement"
+  },
+  "validation_status": "Artifact hashes and packaging verified; GPU validation of this weight export with the rebuilt wheel has not been rerun.",
+  "previous_release_validation": {
+    "model_release": "3.5.0rc3",
+    "plugin_release": "3.5.0rc3",
+    "model_safetensors_sha256": "fa5980193d8519efbdcd45054f3a7616c961d06f7a7653bdafcfba60a412f09c",
+    "wheel_sha256": "20d3a4504c1a74cac4b403f7afd72d77ce07d5c335993bb5fb53a44c164a0171",
+    "validated_runtime": {
+      "vllm": "0.26.0",
+      "transformers": "5.14.1",
+      "huggingface-hub": "1.24.0",
+      "torch": "2.11.0",
+      "torchvision": "0.26.0",
+      "timm": "1.0.22",
+      "nemotron-parse": "3.5.0rc3"
+    },
+    "validation_reference": "reference/parse_3_5/validation.json"
+  }
+}

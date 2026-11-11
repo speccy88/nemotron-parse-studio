@@ -1,0 +1,75 @@
+{
+  "revision": "a9a1febb1b9bf497fc67bd1d23fa33e170b249db",
+  "files": {
+    "chat_template.jinja": {
+      "size": 212,
+      "algorithm": "git-blob-sha1",
+      "digest": "f9fa67dcbb2a57650d7e8b9f9f14a70e481a357f"
+    },
+    "config.json": {
+      "size": 5735,
+      "algorithm": "git-blob-sha1",
+      "digest": "dbba9c73cf3cf8569e4767c7a6d80b81152f5867"
+    },
+    "generation_config.json": {
+      "size": 284,
+      "algorithm": "git-blob-sha1",
+      "digest": "86ee2d8e3d14c0fb43b2645b2f343ff4c0ad245f"
+    },
+    "hf_logits_processor.py": {
+      "size": 14471,
+      "algorithm": "git-blob-sha1",
+      "digest": "484182ee1c8fa710f5c5d7f037572d230f5c9cc5"
+    },
+    "hf_nemotron_parse_config.py": {
+      "size": 5016,
+      "algorithm": "git-blob-sha1",
+      "digest": "7c9a5913c84d25672920fb08dc92f96161604b9c"
+    },
+    "hf_nemotron_parse_modeling.py": {
+      "size": 12773,
+      "algorithm": "git-blob-sha1",
+      "digest": "82e06070c4431836d2f0f90ef9d68c35e1fdf3cb"
+    },
+    "hf_nemotron_parse_processor.py": {
+      "size": 21061,
+      "algorithm": "git-blob-sha1",
+      "digest": "fddd7b113f996e9ea8cbcd9faa14dc32652366c2"
+    },
+    "hf_prefix_geometry.py": {
+      "size": 6402,
+      "algorithm": "git-blob-sha1",
+      "digest": "577a1bb031235a8ef2e8945b9ce4a4b65a839784"
+    },
+    "model.safetensors": {
+      "size": 2523266640,
+      "algorithm": "sha256",
+      "digest": "81dd7609c589f3694ce75520c25af5010953231358de6aec4d03e8c6aac787e9"
+    },
+    "preprocessor_config.json": {
+      "size": 950,
+      "algorithm": "git-blob-sha1",
+      "digest": "a3933449b5a6eb9555fd7f29ce229f598f74c665"
+    },
+    "processor_config.json": {
+      "size": 287,
+      "algorithm": "git-blob-sha1",
+      "digest": "4959a42e3da9cb1fe6173d2096d0ccf3b37bcb44"
+    },
+    "special_tokens_map.json": {
+      "size": 747,
+      "algorithm": "git-blob-sha1",
+      "digest": "0a7046614fdd6368c44cbb4b182d83a9d18b61bf"
+    },
+    "tokenizer.json": {
+      "size": 7627412,
+      "algorithm": "git-blob-sha1",
+      "digest": "cc5efa9e6dccd31cc047158e05a7523dd365c74e"
+    },
+    "tokenizer_config.json": {
+      "size": 414355,
+      "algorithm": "git-blob-sha1",
+      "digest": "48f6677397a294f3c87237f77f5bf4cc7f4b79eb"
+    }
+  }
+}

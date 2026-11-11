@@ -1,0 +1,206 @@
+{
+  "multilingual": {
+    "raw_out": "<x_0.1><y_0.1>Bonjour · café · 日本語 · العربية · Ω<x_0.9><y_0.9><class_Text>",
+    "markdown": "Bonjour · café · 日本語 · العربية · Ω",
+    "blocks": [
+      {
+        "class": "Text",
+        "bbox": [
+          0.1,
+          0.1,
+          0.9,
+          0.9
+        ],
+        "text": "Bonjour · café · 日本語 · العربية · Ω",
+        "content": "Bonjour · café · 日本語 · العربية · Ω",
+        "bbox_pixels": [
+          80.0,
+          60.0,
+          720.0,
+          540.0
+        ]
+      }
+    ],
+    "warnings": [],
+    "coordinate_frame": "content_normalized"
+  },
+  "math_code": {
+    "raw_out": "<x_0.1><y_0.1>```python\\nprint(\"a\")\\n```<x_0.9><y_0.9><class_Code><x_0.1><y_0.1>$E=mc^2$<x_0.9><y_0.9><class_Formula>",
+    "markdown": "```python\\nprint(\"a\")\\n```\n\n$E=mc^2$",
+    "blocks": [
+      {
+        "class": "Code",
+        "bbox": [
+          0.1,
+          0.1,
+          0.9,
+          0.9
+        ],
+        "text": "```python\\nprint(\"a\")\\n```",
+        "content": "```python\\nprint(\"a\")\\n```",
+        "bbox_pixels": [
+          80.0,
+          60.0,
+          720.0,
+          540.0
+        ]
+      },
+      {
+        "class": "Formula",
+        "bbox": [
+          0.1,
+          0.1,
+          0.9,
+          0.9
+        ],
+        "text": "$E=mc^2$",
+        "content": "$E=mc^2$",
+        "bbox_pixels": [
+          80.0,
+          60.0,
+          720.0,
+          540.0
+        ]
+      }
+    ],
+    "warnings": [],
+    "coordinate_frame": "content_normalized"
+  },
+  "merged_table": {
+    "raw_out": "<x_0.1><y_0.1>\\begin{tabular}{ccc}\\multicolumn{2}{c}{\\thead{Group}} & \\thead{Total} \\\\ A & B & 0032 \\\\ \\end{tabular}<x_0.9><y_0.9><class_Table>",
+    "markdown": "<table>\n<tr>\n<th colspan=\"2\">Group</th>\n<th>Total</th>\n</tr>\n<tr>\n<td>A</td>\n<td>B</td>\n<td>0032</td>\n</tr>\n</table>",
+    "blocks": [
+      {
+        "class": "Table",
+        "bbox": [
+          0.1,
+          0.1,
+          0.9,
+          0.9
+        ],
+        "text": "\\begin{tabular}{ccc}\\multicolumn{2}{c}{\\thead{Group}} & \\thead{Total} \\\\ A & B & 0032 \\\\ \\end{tabular}",
+        "content": "<table>\n<tr>\n<th colspan=\"2\">Group</th>\n<th>Total</th>\n</tr>\n<tr>\n<td>A</td>\n<td>B</td>\n<td>0032</td>\n</tr>\n</table>",
+        "bbox_pixels": [
+          80.0,
+          60.0,
+          720.0,
+          540.0
+        ]
+      }
+    ],
+    "warnings": [],
+    "coordinate_frame": "content_normalized"
+  },
+  "empty_cell": {
+    "raw_out": "<x_0.1><y_0.1>\\begin{tabular}{cc}\\thead{Item} & \\thead{Note} \\\\ A & first\\newline second \\\\ B & \\\\ \\end{tabular}<x_0.9><y_0.9><class_Table>",
+    "markdown": "<table>\n<tr>\n<th>Item</th>\n<th>Note</th>\n</tr>\n<tr>\n<td>A</td>\n<td>first<br/> second</td>\n</tr>\n<tr>\n<td>B</td>\n<td></td>\n</tr>\n</table>",
+    "blocks": [
+      {
+        "class": "Table",
+        "bbox": [
+          0.1,
+          0.1,
+          0.9,
+          0.9
+        ],
+        "text": "\\begin{tabular}{cc}\\thead{Item} & \\thead{Note} \\\\ A & first\\newline second \\\\ B & \\\\ \\end{tabular}",
+        "content": "<table>\n<tr>\n<th>Item</th>\n<th>Note</th>\n</tr>\n<tr>\n<td>A</td>\n<td>first<br/> second</td>\n</tr>\n<tr>\n<td>B</td>\n<td></td>\n</tr>\n</table>",
+        "bbox_pixels": [
+          80.0,
+          60.0,
+          720.0,
+          540.0
+        ]
+      }
+    ],
+    "warnings": [],
+    "coordinate_frame": "content_normalized"
+  },
+  "chart": {
+    "raw_out": "<x_0.1><y_0.1><chart><title>Sales</title><table><tr><td>A</td><td>32 (16.6%)</td></tr><tr><td>B</td><td>64 (33.2%)</td></tr></table></chart><x_0.9><y_0.9><class_Chart>",
+    "markdown": "<chart><title>Sales</title><table><tr><td>A</td><td>32 (16.6%)</td></tr><tr><td>B</td><td>64 (33.2%)</td></tr></table></chart>",
+    "blocks": [
+      {
+        "class": "Chart",
+        "bbox": [
+          0.1,
+          0.1,
+          0.9,
+          0.9
+        ],
+        "text": "<chart><title>Sales</title><table><tr><td>A</td><td>32 (16.6%)</td></tr><tr><td>B</td><td>64 (33.2%)</td></tr></table></chart>",
+        "content": "<chart><title>Sales</title><table><tr><td>A</td><td>32 (16.6%)</td></tr><tr><td>B</td><td>64 (33.2%)</td></tr></table></chart>",
+        "bbox_pixels": [
+          80.0,
+          60.0,
+          720.0,
+          540.0
+        ]
+      }
+    ],
+    "warnings": [],
+    "coordinate_frame": "content_normalized"
+  },
+  "unknown_class": {
+    "raw_out": "<x_0.1><y_0.1>Preserved unknown role<x_0.9><y_0.9><class_CustomRole>",
+    "markdown": "Preserved unknown role",
+    "blocks": [
+      {
+        "class": "CustomRole",
+        "bbox": [
+          0.1,
+          0.1,
+          0.9,
+          0.9
+        ],
+        "text": "Preserved unknown role",
+        "content": "Preserved unknown role",
+        "bbox_pixels": [
+          80.0,
+          60.0,
+          720.0,
+          540.0
+        ]
+      }
+    ],
+    "warnings": [],
+    "coordinate_frame": "content_normalized"
+  },
+  "malformed_table": {
+    "raw_out": "<x_0.1><y_0.1>\\begin{tabular}{cc} incomplete &<x_0.9><y_0.9><class_Table>",
+    "markdown": "\\begin{tabular}{cc} incomplete &",
+    "blocks": [
+      {
+        "class": "Table",
+        "bbox": [
+          0.1,
+          0.1,
+          0.9,
+          0.9
+        ],
+        "text": "\\begin{tabular}{cc} incomplete &",
+        "content": "\\begin{tabular}{cc} incomplete &",
+        "bbox_pixels": [
+          80.0,
+          60.0,
+          720.0,
+          540.0
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "block_index": 0,
+        "message": "Table markup could not be fully converted; original content preserved."
+      }
+    ],
+    "coordinate_frame": "content_normalized"
+  },
+  "empty_page": {
+    "raw_out": "",
+    "markdown": "",
+    "blocks": [],
+    "warnings": [],
+    "coordinate_frame": "content_normalized"
+  }
+}
