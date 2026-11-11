@@ -67,11 +67,24 @@ struct CropReview: Identifiable { let id = UUID(); let documentID: UUID; let pag
     private var undoEdits: [Edit] = []; private var redoEdits: [Edit] = []
     private let sessionURL: URL
     let projectRoot: URL
+    let localSetupInstructions: String
 
     init() {
-        projectRoot = URL(fileURLWithPath: Bundle.main.object(forInfoDictionaryKey: "StudioSourceRoot") as? String ?? FileManager.default.currentDirectoryPath)
-        worker = PythonWorker(projectRoot: projectRoot)
-        sessionURL = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0].appendingPathComponent("NemotronParseStudio/session.json")
+        let support = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
+            .appendingPathComponent("NemotronParseStudio", isDirectory: true)
+        let bundledScript = Bundle.main.resourceURL?
+            .appendingPathComponent("Backend/studio_worker.py")
+        if let bundledScript, FileManager.default.fileExists(atPath: bundledScript.path) {
+            projectRoot = support.appendingPathComponent("Runtime", isDirectory: true)
+            worker = PythonWorker(projectRoot: projectRoot, bundledScript: bundledScript)
+            localSetupInstructions = "Run Set Up Local Parsing.command from the release ZIP to install the Python environment and model. Reopen the app when setup finishes."
+        } else {
+            let sourcePath = Bundle.main.object(forInfoDictionaryKey: "StudioSourceRoot") as? String
+            projectRoot = URL(fileURLWithPath: sourcePath ?? FileManager.default.currentDirectoryPath)
+            worker = PythonWorker(projectRoot: projectRoot)
+            localSetupInstructions = "Run Backend/setup.sh --model in the project folder and point Model directory to the downloaded model."
+        }
+        sessionURL = support.appendingPathComponent("session.json")
         if let data = UserDefaults.standard.data(forKey: "studio.preferences"), let saved = try? JSONDecoder().decode(Preferences.self, from: data) { preferences = saved }
         if preferences.settings.model_directory.isEmpty {
             let model = projectRoot.appendingPathComponent("Models")

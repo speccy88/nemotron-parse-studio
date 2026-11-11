@@ -5,15 +5,17 @@ import Foundation
 public actor PythonWorker {
     private let root: URL
     private let logURL: URL
+    private let bundledScript: URL?
     private var child: Process?
     private var input: FileHandle?
     private var reader: Task<Void, Never>?
     private var buffer = Data()
     private var pending: [String: CheckedContinuation<Data, Error>] = [:]
     private var generation = UUID()
-    public init(projectRoot: URL, logURL: URL? = nil) {
+    public init(projectRoot: URL, logURL: URL? = nil, bundledScript: URL? = nil) {
         root = projectRoot
         self.logURL = logURL ?? FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0].appendingPathComponent("NemotronParseStudio/worker.log")
+        self.bundledScript = bundledScript
     }
     public func request(method: String, body: Data? = nil) async throws -> Data {
         try Task.checkCancellation()
@@ -41,8 +43,13 @@ public actor PythonWorker {
     private func startIfNeeded() throws {
         if let child, child.isRunning { return }
         let candidates = [".venv-model/bin/python", "Backend/.venv/bin/python", ".venv-backend/bin/python"]
-        guard let executable = candidates.map({ root.appendingPathComponent($0) }).first(where: { FileManager.default.isExecutableFile(atPath: $0.path) }) else { throw StudioError.message("Python worker dependencies are missing. Run Backend/setup.sh --model in the project folder.") }
-        let script = root.appendingPathComponent("Backend/studio_worker.py")
+        guard let executable = candidates.map({ root.appendingPathComponent($0) }).first(where: { FileManager.default.isExecutableFile(atPath: $0.path) }) else {
+            let setup = bundledScript == nil
+                ? "Run Backend/setup.sh --model in the project folder."
+                : "Run Set Up Local Parsing.command from the release ZIP."
+            throw StudioError.message("Python worker dependencies are missing. \(setup)")
+        }
+        let script = bundledScript ?? root.appendingPathComponent("Backend/studio_worker.py")
         guard FileManager.default.fileExists(atPath: script.path) else { throw StudioError.message("Cannot find Backend/studio_worker.py. Keep the app with its source workspace or rebuild from the new location.") }
         let process = Process(), stdinPipe = Pipe(), stdoutPipe = Pipe()
         process.executableURL = executable; process.arguments = [script.path, "--stdio"]; process.currentDirectoryURL = root
@@ -50,7 +57,11 @@ public actor PythonWorker {
         try FileManager.default.createDirectory(at: logURL.deletingLastPathComponent(), withIntermediateDirectories: true)
         if !FileManager.default.fileExists(atPath: logURL.path) { FileManager.default.createFile(atPath: logURL.path, contents: nil) }
         let log = try FileHandle(forWritingTo: logURL); _ = try log.seekToEnd(); process.standardError = log
-        var env = ProcessInfo.processInfo.environment; env["PYTORCH_ENABLE_MPS_FALLBACK"] = "1"; env["PYTHONUNBUFFERED"] = "1"; process.environment = env
+        var env = ProcessInfo.processInfo.environment
+        env["PYTORCH_ENABLE_MPS_FALLBACK"] = "1"
+        env["PYTHONUNBUFFERED"] = "1"
+        env["PYTHONDONTWRITEBYTECODE"] = "1"
+        process.environment = env
         let current = UUID(); generation = current; buffer = Data()
         process.terminationHandler = { [weak self] process in Task { await self?.ended(generation: current, status: process.terminationStatus) } }
         try process.run()

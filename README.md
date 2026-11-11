@@ -4,6 +4,10 @@ A native SwiftUI workspace for NVIDIA Nemotron-3.5-Parse: import documents, pars
 
 The Release app was built and tested on macOS 27.2.1 with Xcode 27.0. Local Transformers supports single, double, and triple pass. Native Swift/Core AI passed end-to-end comparison with PyTorch for the **512 × 256 and 640 × 800** profiles. Select Local NVIDIA Transformers for other geometries or multipass parsing.
 
+## Download the alpha
+
+The [GitHub releases](https://github.com/speccy88/nemotron-parse-studio/releases) include a prebuilt Apple silicon app and a setup command for local parsing. See `ALPHA_START.md` inside the ZIP. To build a release ZIP from a committed version, run `python3 Scripts/package_release.py v1.0.0-alpha.1`.
+
 ## Open the app after building
 
 Open `build/Build/Products/Release/Nemotron Parse Studio.app`, or open `NemotronParseStudio.xcodeproj` and run its scheme.

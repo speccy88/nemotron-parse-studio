@@ -66,7 +66,7 @@ struct SettingsView: View {
                     Button("Reset Postprocessing Defaults") { model.preferences.options = PostprocessOptions() }
                 }
                 Section("Local setup") {
-                    Text("Run Backend/setup.sh --model once if the worker dependencies are missing. Point Model directory to the pinned downloaded model. This app starts its private stdio worker automatically when its project environment is available.").font(.caption).textSelection(.enabled)
+                    Text(model.localSetupInstructions).font(.caption).textSelection(.enabled)
                     Text("Workspace: \(model.projectRoot.path)").font(.caption.monospaced()).textSelection(.enabled)
                 }
             }.formStyle(.grouped)
